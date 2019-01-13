@@ -51,7 +51,7 @@ def grade():
         messagebox.showinfo(title="答案", message="很遗憾，你只答对了"+str(len(correct_answers))+"道题目中的"+str(score)+"道题，明天再来试试吧。")
 
 #第0页
-pic1=PhotoImage(file="startpic.gif")
+pic1=PhotoImage(file="startpic.png")
 ttk.Label(f0,image=pic1).grid(row=0, column=0, columnspan=2)
 button1=ttk.Button(f0, text='开始答题', command=lambda:raise_frame(f1))
 button1.place(x=180, y=600, anchor="center")
@@ -59,7 +59,7 @@ button1.place(x=180, y=600, anchor="center")
 #第1页
 pf=ttk.Frame(f1)
 pf.pack(pady=5)
-logo1=PhotoImage(file="lbqh.gif")
+logo1=PhotoImage(file="lbqh.png")
 ttk.Label(pf,image=logo1).pack()
 
 tf=ttk.Frame(f1)
@@ -85,7 +85,7 @@ button2.place(x=240, y=600, anchor="center")
 #第2页
 pf=ttk.Frame(f2)
 pf.pack(pady=5)
-logo2=PhotoImage(file="ssx.gif")
+logo2=PhotoImage(file="ssx.png")
 ttk.Label(pf,image=logo2).grid(row=0, column=0, columnspan=2, padx=10)
 
 tf=ttk.Frame(f2)
@@ -98,9 +98,9 @@ label2=ttk.Label(tf)
 label2.grid(row=1, column=0, columnspan=2)  #插入一空行
 
 v2= IntVar()
-ttk.Radiobutton(tf, text="小乔", variable=v2, value=1).grid(row=2, column=0,columnspan=2, padx=35, sticky="w")
-ttk.Radiobutton(tf, text="虞姬", variable=v2, value=2).grid(row=3, column=0,columnspan=2, padx=35, sticky="w")
-ttk.Radiobutton(tf, text="花木兰", variable=v2, value=3).grid(row=4, column=0,columnspan=2, padx=35, sticky="w")
+ttk.Radiobutton(tf, text="虞姬", variable=v2, value=1).grid(row=2, column=0,columnspan=2, padx=35, sticky="w")
+ttk.Radiobutton(tf, text="花木兰", variable=v2, value=2).grid(row=3, column=0,columnspan=2, padx=35, sticky="w")
+ttk.Radiobutton(tf, text="韩懿莹", variable=v2, value=3).grid(row=4, column=0,columnspan=2, padx=35, sticky="w")
 ttk.Radiobutton(tf, text="孙尚香", variable=v2, value=4).grid(row=5, column=0,columnspan=2, padx=35, sticky="w")
 
 button1=ttk.Button(f2, text='上一题', command=lambda:raise_frame(f1))
@@ -111,7 +111,7 @@ button2.place(x=240, y=600, anchor="center")
 #第3页
 pf=ttk.Frame(f3)
 pf.pack(pady=5)
-logo3=PhotoImage(file="wzj.gif")
+logo3=PhotoImage(file="wzj.png")
 ttk.Label(pf,image=logo3).grid(row=0, column=0, columnspan=2)
 
 tf=ttk.Frame(f3)
@@ -137,7 +137,7 @@ button2.place(x=240, y=600, anchor="center")
 #第4页
 pf=ttk.Frame(f4)
 pf.pack(pady=5)
-logo4=PhotoImage(file="lb.gif")
+logo4=PhotoImage(file="lb.png")
 ttk.Label(pf,image=logo4).grid(row=0, column=0, columnspan=2)
 
 tf=ttk.Frame(f4)
@@ -163,7 +163,7 @@ button2.place(x=240, y=600, anchor="center")
 #第5页
 pf=ttk.Frame(f5)
 pf.pack(pady=5)
-logo5=PhotoImage(file="ln.gif")
+logo5=PhotoImage(file="ln.png")
 ttk.Label(pf,image=logo5).grid(row=0, column=0, columnspan=2)
 
 tf=ttk.Frame(f5)
